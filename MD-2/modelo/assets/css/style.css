@@ -3,6 +3,8 @@
 
 :root {
   --primary-color:  rgb(13, 106, 134);
+    --primary-dark:  rgb(17, 86, 102);
+
 }
 
 * {
@@ -24,4 +26,42 @@ body {
   margin: 50px auto;
   background: #fff;
   padding: 20px;
+  border-radius: 10px;
+}
+
+from input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+
+fomr button:hover {
+  background: var(--primary-dark);
+}
+
+.paragrafo-resultado {
+  background: rgb(109, 255, 182);
+  padding: 10px 20px;
 }
